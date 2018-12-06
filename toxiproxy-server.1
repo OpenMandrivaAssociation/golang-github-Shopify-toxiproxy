@@ -1,0 +1,20 @@
+.\" Manpage for toxiproxy-server.
+.\" Contact alexandre@alexandreviau.net to correct errors or typos.
+.TH man 8 "07 August 2015" "1.0" "toxiproxy-server man page"
+.SH NAME
+toxiproxy-server \- proxy to simulate network and system conditions
+.SH SYNOPSIS
+toxiproxy-server [options]
+.SH DESCRIPTION
+Toxiproxy is a framework for simulating network conditions. It's made specifically to work in testing, CI and development environments, supporting deterministic tampering with connections, but with support for randomized chaos and customization.
+.SH OPTIONS
+.B \-host <host>
+Host for toxiproxy's API to listen on
+.TP
+.B \-port <port>
+Port for toxiproxy's API to listen on
+.TP
+.B \-seed <seed>
+Seed for randomizing toxics with
+.SH AUTHOR
+Alexandre Viau (alexandre@alexandreviau.net)

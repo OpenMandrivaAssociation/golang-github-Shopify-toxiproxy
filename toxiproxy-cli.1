@@ -1,0 +1,40 @@
+.\" Manpage for toxiproxy-cli
+.\" Contact aviau@debian.org to correct errors or typos.
+.TH man 8 "26 June 2016" "1.0" "toxiproxy-cli man page"
+.SH NAME
+toxiproxy-cli \- simulate network and system conditions
+.SH SYNOPSIS
+toxiproxy-cli [global options] command [command options] [arguments...]
+.SH DESCRIPTION
+Toxiproxy is a framework for simulating network conditions. It's made specifically to work in testing, CI and development environments, supporting deterministic tampering with connections, but with support for randomized chaos and customization.
+.SH GLOBAL OPTIONS
+.TP
+.B \-\-help, \-h
+show help
+.TP
+.B \-\-version, \-v
+print the version
+.SH COMMANDS
+.TP
+.B list, l, li, ls
+list all proxies
+.TP
+.B inspect, i, ins
+inspect a single proxy
+.TP
+.B create, c, new
+create a new proxy
+.TP
+.B toggle, tog
+toggle enabled status on a proxy
+.TP
+.B delete, d
+delete a proxy
+.TP
+.B toxic, t
+add, remove or update a toxic
+.TP
+.B help, h
+Shows a list of commands or help for one command
+.SH AUTHOR
+Alexandre Viau (aviau@debian.org)
